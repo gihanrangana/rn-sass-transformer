@@ -3,6 +3,7 @@
     "name": "rn-sass-app",
     "slug": "rn-sass-app",
     "version": "1.0.0",
+    "entryPoint": "./index.js",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -27,6 +28,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+          "svg",
+          "scss",
+          "sass"
+      ]
+  },
   }
 }

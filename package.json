@@ -1,5 +1,5 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "./index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -18,9 +18,22 @@
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
+    "@types/react-css-modules": "^4.6.2",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
+    "babel-plugin-react-native-classname-to-dynamic-style": "^0.22.0",
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "babel-preset-expo": "^8.3.0",
+    "jest-expo": "^40.0.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.4",
+    "postcss-css-variables": "^0.17.0",
+    "react-native-postcss-transformer": "^1.2.4",
+    "react-native-sass-transformer": "^1.4.0",
     "typescript": "~4.0.0"
   },
-  "private": true
+  "jest": {
+    "preset": "react-native"
+  }
 }
