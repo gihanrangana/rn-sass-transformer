@@ -4,7 +4,7 @@ const upstreamTransformer = require("metro-react-native-babel-transformer");
 
 const path = require("path");
 
-const appTheme = (path.resolve(__dirname,'/src/styles/Global.scss')).replace(/\\/g, "/");
+const appTheme = (path.resolve(__dirname,'/../src/styles/Global.scss')).replace(/\\/g, "/");
 
 let prefix = ``;
 
