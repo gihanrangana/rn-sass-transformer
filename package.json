@@ -13,6 +13,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-css-transformer": "^1.2.4",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "node-sass": "^5.0.0",
     "postcss": "^8.2.4",
     "postcss-css-variables": "^0.17.0",
+    "react-native-css-media-query-processor": "^0.21.3",
     "react-native-postcss-transformer": "^1.2.4",
     "react-native-sass-transformer": "^1.4.0",
     "typescript": "~4.0.0"

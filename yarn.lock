@@ -7203,13 +7203,21 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-native-css-media-query-processor@^0.21.1:
+react-native-css-media-query-processor@^0.21.1, react-native-css-media-query-processor@^0.21.3:
   version "0.21.3"
   resolved "https://registry.yarnpkg.com/react-native-css-media-query-processor/-/react-native-css-media-query-processor-0.21.3.tgz#1186c949b1b32a5e1d817fedb8bf629464dee3e3"
   integrity sha512-F8VzDMWHuTVpRjQu3EuAnWrvI0/jyo/cZoOVaed/GoKMfWOxN8+f1x3UPSy4OobltuyU9c2cwIfg0AyUlcDteQ==
   dependencies:
     deepmerge "^3.2.0"
     micro-memoize "^3.0.1"
+
+react-native-css-transformer@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-native-css-transformer/-/react-native-css-transformer-1.2.4.tgz#1a08e9fdce0d37f0babaf39751ca14c82bcd5d03"
+  integrity sha512-8UQmFbwpi5gGOo6jTFBI7+xesaSPOPNSwHlZjvG4IUOCLwt1VD7k5tNi/mO/y3LrGkhv3tFQAHPoAUemaYsj2w==
+  dependencies:
+    css-to-react-native-transform "^1.8.1"
+    semver "^5.6.0"
 
 react-native-dynamic-style-processor@^0.21.0:
   version "0.21.0"

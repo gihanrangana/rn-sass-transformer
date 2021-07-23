@@ -7,20 +7,20 @@ const transformer = "./babel/transformer.js";
 module.exports = (async () => {
 
     const {
-        resolver: { sourceExts, assetExts }
+        resolver: { sourceExts }
     } = await getDefaultConfig();
 
     return {
         transformer: {
-            assetPlugins: ['expo-asset/tools/hashAssetFiles'],
-            babelTransformerPath: require.resolve(transformer),
+            // assetPlugins: ['expo-asset/tools/hashAssetFiles'],
+            babelTransformerPath: require.resolve('react-native-css-transformer'),
         },
         resolver: {
-            assetExts: assetExts.filter(ext => ext !== "svg"),
-            sourceExts: ['expo.ts', 'expo.tsx', 'expo.js', 'expo.jsx', ...sourceExts, "scss", "sass"],
-            extraNodeModules: new Proxy({}, {
-                get: (target, name) => path.join(process.cwd(), `node_modules/${name}`),
-            })
+            // assetExts: assetExts.filter(ext => ext !== "svg"),
+            sourceExts: [...sourceExts, "scss", "sass"],
+            // extraNodeModules: new Proxy({}, {
+            //     get: (target, name) => path.join(process.cwd(), `node_modules/${name}`),
+            // })
         }
     };
 })();
